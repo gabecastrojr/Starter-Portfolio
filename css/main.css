@@ -184,8 +184,8 @@ body {
 
 #portfolio-section .title {
   position: relative;
-  widows: 200px;
-  height: 200px;
+  /* widows: 200px;
+  height: 200px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,6 +202,7 @@ body {
 
 #portfolio-section .title h2 {
   position: relative;
+  top: 82px;
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 900;
@@ -214,8 +215,9 @@ body {
 #portfolio-section .portfolio-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 150px 150px 150px 150px 150px;
   grid-gap: 10px;
+  margin-top: 200px;
 }
 
 #portfolio-section .portfolio-container .box {
@@ -237,35 +239,32 @@ body {
   -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
 }
+/* Portfolio Project Styling */
 
-#portfolio-section .portfolio-container .box.image1 {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-#portfolio-section .portfolio-container .box.image1 .image {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-  background: url("https://cdn.dribbble.com/users/674925/screenshots/8975146/media/1d006555088b5f1d5d02f6e07d35aa2d.png");
+#portfolio-section .portfolio-container .box .image .hover-bg {
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.4s ease-in-out;
+  /* padding: 10px 20px; */
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
-#portfolio-section
-  .portfolio-container
-  .box.image1
-  .image
-  .hover-bg
-  .title
-  .text {
+#portfolio-section .portfolio-container .box:hover .image .hover-bg {
+  background: rgba(255, 53, 53, 0.8);
+  /* padding: 10px 20px; */
+}
+
+#portfolio-section .portfolio-container .box .image .hover-bg .title {
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .box .image .hover-bg .title .text {
   background: #000000;
   border-radius: 5px;
   padding: 10px 20px;
   transform: translate3d(0, 400px, 0);
-  transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.5s ease-in-out;
   opacity: 0;
 }
 
@@ -284,18 +283,115 @@ body {
   /* transition: transform 0.3s ease-in-out; */
 }
 
-#portfolio-section .portfolio-container .box.image1 .image .hover-bg {
-  background: rgba(255, 255, 255, 0);
-  transition: all 0.4s ease-in-out;
-  /* padding: 10px 20px; */
+/* Box Location 1*/
+
+#portfolio-section .portfolio-container .box.image1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
-#portfolio-section .portfolio-container .box:hover .image .hover-bg {
-  background: rgba(255, 255, 255, 0.6);
-  /* padding: 10px 20px; */
+#portfolio-section .portfolio-container .box.image1 .image {
+  /* grid-column: 1 / 3;
+  grid-row: 1 / 2; */
+  background: url("https://cdn.dribbble.com/users/674925/screenshots/8975146/media/1d006555088b5f1d5d02f6e07d35aa2d.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-#portfolio-section .portfolio-container .box .fas {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+/* Box Location 2 */
+#portfolio-section .portfolio-container .box.image2 {
+  grid-column: 3 /;
+  grid-row: 1 / 4;
 }
+
+#portfolio-section .portfolio-container .box.image2 .image {
+  background: url("https://cdn.dribbble.com/users/89889/screenshots/8999952/media/9c497e9fd015310f42279a238eaa1aaf.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Box Location 3 */
+
+#portfolio-section .portfolio-container .box.image3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+#portfolio-section .portfolio-container .box.image3 .image {
+  background: url("https://cdn.dribbble.com/users/1656935/screenshots/9004914/media/9f7871cf13ccd7d0181b112b3daef1b4.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Box Location 4 */
+
+#portfolio-section .portfolio-container .box.image4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#portfolio-section .portfolio-container .box.image4 .image {
+  background: url("https://cdn.dribbble.com/users/1211065/screenshots/9006378/media/9829400f058f864c7547c810bd488b15.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Box Location 5 */
+
+#portfolio-section .portfolio-container .box.image5 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 6;
+}
+
+#portfolio-section .portfolio-container .box.image5 .image {
+  background: url("https://cdn.dribbble.com/users/1998993/screenshots/8970542/media/e6920d4fc9e1f0e68ecc2fedb4d8bfb7.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Box Location 6 */
+
+#portfolio-section .portfolio-container .box.image6 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+}
+
+#portfolio-section .portfolio-container .box.image6 .image {
+  background: url("https://cdn.dribbble.com/users/416805/screenshots/8813620/media/d991651995e1f43664dd0437f849de17.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio-section .portfolio-container .box.image7 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
+}
+
+#portfolio-section .portfolio-container .box.image7 .image {
+  background: url("https://cdn.dribbble.com/users/729829/screenshots/9007786/media/d1a5e73fbdd36789b5b0165dcd30467a.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Experience Section */
